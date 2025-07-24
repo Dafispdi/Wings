@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hacked by KYXZAN</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      font-family: 'Orbitron', sans-serif;
+      color: #00fff7;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      margin-top: 10vh;
+    }
+
+    .logo-glitch {
+      width: 200px;
+      height: auto;
+      animation: glitch-logo 1s infinite;
+      filter: drop-shadow(0 0 10px #00fff7);
+    }
+
+    @keyframes glitch-logo {
+      0% { transform: translate(0); opacity: 1; }
+      20% { transform: translate(-2px, 2px); }
+      40% { transform: translate(2px, -2px); }
+      60% { transform: translate(-1px, 1px); opacity: 0.95; }
+      80% { transform: translate(1px, -1px); opacity: 1; }
+      100% { transform: translate(0); }
+    }
+
+    h1 {
+      font-size: 3em;
+      text-shadow: 0 0 10px #00fff7, 0 0 20px #ff00ff;
+      animation: glitch-text 1s infinite;
+    }
+
+    @keyframes glitch-text {
+      0%, 100% { transform: translate(0); }
+      20% { transform: translate(-2px, 0); }
+      40% { transform: translate(2px, 2px); }
+      60% { transform: translate(-1px, -1px); }
+      80% { transform: translate(1px, 1px); }
+    }
+
+    .typing {
+      font-size: 1.5em;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 0.15em solid #00fff7;
+      width: 0;
+      animation: typing 4s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
+      margin: 20px auto;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent; }
+      50% { border-color: #00fff7; }
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      margin-top: 30px;
+      font-size: 1em;
+      color: black;
+      background: #00fff7;
+      border: none;
+      border-radius: 25px;
+      box-shadow: 0 0 15px #00fff7;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: #00ffaa;
+      transform: scale(1.1);
+    }
+
+    audio {
+      display: none;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="overlay"></div>
+
+  <!-- Audio autoplay -->
+  <audio autoplay loop>
+    <source src="https://files.catbox.moe/k355n9.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="container">
+    <img src="https://files.catbox.moe/hgvpyg.png" alt="logo" class="logo-glitch">
+    <h1>HACKED BY KYXZAN</h1>
+    <div class="typing">SITUS MU KURANG ANU...</div>
+    <p style="margin-top: 30px; font-size: 1.2em;">Tidak ada sistem yang aman selamanya.<br><i>Respect ✯ Skills ✯ Attitude</i></p>
+    <a class="btn" href="https://t.me/Kyxsancs" target="_blank">Hubungi di Telegram</a>
+  </div>
+
+</body>
+</html>
